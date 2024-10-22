@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+
+            background-image: url("https://wallpapercat.com/w/full/3/8/4/5815748-1920x1080-desktop-hd-funny-background.jpg"); 
+
+            
+
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+    
+        #myText {
+          font-size: 12px;
+          margin-bottom: 20px;
+        }
+    
+        .button-container {
+          margin-top: 10px;
+        }
+    
+        button {
+          margin: 5px;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+    
+        #spawnedText {
+          margin-top: 20px;
+          font-size: 20px;
+          color: #66bdff;
+        }
+
+        .shadow-tabbed {
+          margin-top: 100px;
+          color:rgba(249, 249, 249, 0)
+        }
+      </style>
+</head>
+<body>
+    <h1 id="greeting">Hello Unblocker Seeker!</h1>
+
+    <p id="about">Looks like you found this cool totally not terribly designed website.
+        well anyway, this is where me and my friends keep our unblockers, so if you found this than you're in luck!
+    </p>
+
+        <p id="button instuctions">Click one of these buttons to see the links of each different type of unblockers</p>
+
+        <div class="button-container">
+          <button onclick="spawnText(1)">Selenite</button>
+          <button onclick="spawnText(2)">Asteroid</button>
+          <button onclick="spawnText(3)">Doge</button>
+          <button onclick="spawnText(4)">Utopia</button>
+          <button onclick="spawnText(5)">Shadow Tabbed</button>
+          <button onclick="spawnText(6)">more</button>
+        </div>
+
+      
+        <div id="spawnedText"></div>
+      
+        <script>
+          function spawnText(buttonNumber) {
+            const spawnedText = document.getElementById("spawnedText");
+      
+            // Clear the previous text
+            spawnedText.textContent = "";
+      
+            // Add new text based on the button clicked
+            switch (buttonNumber) {
+              case 1:
+                spawnedText.textContent = "https://list.blog.sismonda.com.ar/   https://results.search.dansted.org/  https://telescopes.blueshadows.cl/";
+                break;
+              case 2:
+                spawnedText.textContent = "https://studyingtobe.happyforever.com/   https://we.internet-slackers.us/    https://authorization.kreditmurah.com/";
+                break;
+              case 3:
+                spawnedText.textContent = "http://school.highdesertcoders.com/  http://englishchinese.spanishlearning.ar/   https://priceless.russian-glass.ru/";
+                break;
+              case 4:
+                spawnedText.textContent = "https://words.basic.sociedadecirugialp.org/  https://angle.level.seaiq.com/  https://coach.craft.cryptolect.net/ ";
+                break;
+              case 5:
+                spawnedText.textContent = "https://school.work.crabdance.com/   https://love.math.crabdance.com/"; 
+              case 6:
+                spawnedText.textContent = "more coming soon";
+                break;
+              
+              default:
+                spawnedText.textContent = "???";
+            }
+          }
+        </script>
+
+  <script src="unblockerLinks.js"></script>
+</body>
+</html>
